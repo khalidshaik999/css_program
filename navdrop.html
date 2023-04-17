@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+.nav-link{
+display:inline;
+padding:10px;
+margin:15px;
+}
+a{
+font-size:22px;
+text-decoration:none;
+color:black;
+}
+nav{
+background-color:lightgrey;
+padding:5px;
+
+}
+
+.dropdown{
+display:none;
+position:absolute;
+z-index:2;
+left:180px;
+padding:10px;
+}
+.dropdown2{
+display:none;
+position:absolute;
+z-index:2;
+left:500px;
+padding:10px;
+}
+.drop:hover .dropdown{
+display:block;
+}
+
+.drop-link{
+display:block;
+position:sticky;
+top:10px;
+background-color:yellow;
+color:white;
+}
+.drop-link2{
+display:block;
+position:sticky;
+top:10px;
+background-color:yellow;
+color:white;
+}
+.drop2:hover .dropdown2{
+display:block;
+}
+</style>
+</head>
+<body>
+<nav>
+<ul >
+<li class="nav-link"><a href="">home</a></li>
+<li class="nav-link drop"><a href="">about</a>
+<ul class="dropdown">
+<li  class="drop-link"><a href="">about 1</a></li>
+<li  class="drop-link"><a href="">about 2</a></li>
+<li  class="drop-link"><a href="">about 3</a></li>
+<li  class="drop-link"><a href="">about 4</a></li>
+</ul>
+</li>
+<li class="nav-link"><a href="">gallery</a></li>
+<li class="nav-link"><a href="">carrier</a></li>
+<li class="nav-link drop2"><a href="">help</a>
+<ul class="dropdown2">
+<li  class="drop-link2"><a href="">help 1</a></li>
+<li  class="drop-link2"><a href="">help 2</a></li>
+<li  class="drop-link2"><a href="">help 3</a></li>
+<li  class="drop-link2"><a href="">help 4</a></li>
+</ul>
+</li>
+<li class="nav-link"><a href="">contact us</a></li>
+</ul>
+</nav>
+
+</body>
+</html>
